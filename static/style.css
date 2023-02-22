@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background-color: rgb(168, 235, 235);
+}
+ h1{
+  color: red;
+  font-size: 40px;
+  line-height: 150px;
+  margin-left:200px;
+}
+.btn1{
+  line-height: 300px;
+  margin-left: 600px;
+  position: relative;
+  font-size: 30px;
+  padding: 0.7em 1.4em;
+  background-color: #BF0426;
+  text-decoration: none;
+  border: none;
+  border-radius: 0.5em;
+  color: #DEDEDE;
+  box-shadow: 0.5em 0.5em 0.5em whitesmoke;
+}
+
+.btn1::before {
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 0;
+  top: 0;
+  left: 0;
+  background: linear-gradient(135deg, rgb(22, 169, 219) 0%, rgb(0, 175, 191) 50%, rgb(4, 130, 150) 50%, rgb(156, 245, 248) 60%);
+  border-radius: 0 0 0.5em 0;
+  box-shadow: 0.1em 0.1em 0.1em whitesmoke;
+  transition: 0.3s;
+}
+
+.btn1:hover::before {
+  width: 1.6em;
+  height: 1.6em;
+}
+
+.btn1:active {
+  box-shadow: 0.2em 0.2em 0.3em rosybrown;
+  transform: translate(0.1em, 0.1em);
+}
+
+
+.btn2{
+  line-height: 300px;
+  margin-left: 100px;
+  position: relative;
+  font-size: 30px;
+  padding: 0.7em 1.4em;
+  background-color: #BF0426;
+  text-decoration: none;
+  border: none;
+  border-radius: 0.5em;
+  color: #DEDEDE;
+  box-shadow: 0.5em 0.5em 0.5em whitesmoke;
+}
+
+.btn2::before {
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 0;
+  top: 0;
+  left: 0;
+  background: linear-gradient(135deg, rgb(22, 169, 219) 0%, rgb(0, 175, 191) 50%, rgb(4, 130, 150) 50%, rgb(156, 245, 248) 60%);
+  border-radius: 0 0 0.5em 0;
+  box-shadow: 0.1em 0.1em 0.1em whitesmoke;
+  transition: 0.3s;
+}
+
+.btn2:hover::before {
+  width: 1.6em;
+  height: 1.6em;
+}
+
+.btn2:active {
+  box-shadow: 0.2em 0.2em 0.3em rosybrown;
+  transform: translate(0.1em, 0.1em);
+}

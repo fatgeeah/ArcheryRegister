@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,100;1,200;1,300;1,700;1,800;1,900&display=swap');
+*
+{
+    padding: 0;
+    font-family:'Poppins' sans-serif;
+    box-sizing: border-box;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:90vh;
+    background-color:whitesmoke;
+}
+.container
+{
+    padding: 40px;
+    border-radius: 50px;
+    border: 8px solid  rgb(1, 0, 3);
+    box-shadow: -5px -5px 15px whitesmoke, 5px 5px 15px rgb(3, 3, 3),
+    inset -5px -5px 15px rgb(0, 0, 2),
+    inset  5px 5px 15px rgb(0, 0, 0);
+}
+.container .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px
+}
+.container .form h2
+{
+    color: black;
+    font-size: 45px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+}
+.container .form .inputBox
+{
+    position: relative;
+    width: 300px;
+}
+.container .form .inputBox input
+{
+ padding: 12px 10px 12px 48px;
+ border:none;
+ width: 100%;
+ background-color:whitesmoke;
+ border: 1px solid rgb(0, 0, 0);
+ color: rgb(0, 0, 0);
+ font-weight: 300;
+ border-radius: 25px;
+ font-size: 1em;
+ box-shadow: -5px -5px 15px rgb(36, 35, 35), 5px 5px 15px rgb(3, 3, 3);
+ transition: 0.5s;
+ outline: none;
+}
+.container .form .inputBox span
+{
+    top: -5px;
+    position: absolute;
+    left:0;
+    padding: 12px 10px 12px 48px;
+    pointer-events: none;
+    font-size: 25px;
+    font-weight: 300;
+    transition: 0.5s;
+    letter-spacing: 0.05em;
+    color:  black;
+
+}
+.container .form .inputBox input:valid ~ span,
+.container .form .inputBox input:focus ~ span
+{
+    color : rgb(36, 35, 35) ;
+    border: 1px solid  rgb(36, 35, 35) ;
+    background: rgb(54, 53, 53);
+    transform: translateX(-25px) translateY(-7px);
+    font-size: 0.6em;
+    padding: 0.8px;
+    border-radius:10px ;
+    letter-spacing: 0.1em;
+}
+.container .form .inputBox input:valid ~ span,
+.container .form .inputBox input:focus ~ span
+{
+    border: 1px solid  rgb(36, 35, 35);  
+}
+.container .form .inputBox img
+{
+    position: absolute;
+    top: 5px;
+    left:15px;
+    width:25px;
+    padding: 5px 0;
+    border-right: 1px solid black;
+
+}
+.container .form .inputBox input[type="submit"]
+{
+    background:  whitesmoke;
+    color: black;
+    padding:10px 0 ;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: -5px -5px 15px rgb(36, 35, 35), 5px 5px 15px rgb(3, 3, 3),
+    inset -5px -5px 15px rgb(36, 35, 35),
+    inset  5px 5px 15px rgb(3, 3, 3);
+}
+.container .form p
+{
+  font-size: 25px;
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+}
+.container .form p a
+{
+  font-size: 30px;
+    font-weight: 500;
+    color: black;
+
+}
+
+.button a{
+  color: #333340;
+}
+button {
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  background: whitesmoke;
+  border: 1px solid whitesmoke;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+  z-index: 1;
+ }
+ 
+ button::before,
+ button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  transform: skew(15deg);
+  transition: all 0.5s;
+  overflow: hidden;
+  z-index: -1;
+ }
+ 
+ button::before {
+  left: -10px;
+  background: grey;
+ }
+ 
+ button::after {
+  right: -10px;
+  background:black;
+ }
+ 
+ button:hover::before,
+ button:hover::after {
+  width: 58%;
+ }
+ 
+ button:hover span {
+  color: black;
+  transition: 0.3s;
+ }
+ 
+ button span {
+  color: #7b7c8e;
+  font-size: 18px;
+  transition: all 0.3s ease-in;
+ }

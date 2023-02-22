@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archer Register</title>
+    {% load static %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'register.css'%}"> 
+</head>
+<div class="button">
+    <button><span>
+        <a href={% url 'home'%} "home.html" class="button">Home</a>
+    </span></button>
+    <br><br><br>
+</body>
+<form action="" method="post">
+<div class="container">
+    <div class="form signup">
+       {% csrf_token %}
+        <h2>Archer SignUp</h2>
+        <div class="inputBox">
+            <input type="text"  name="Username" id="Username" required="required">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA70lEQVR4nO3UQUrDQBSH8R8umqVdWrrWK+hJxEPYHsNuRPFAurR1ZfEAuinVlUUUXVYGJiCCdNJObCn54A8heeGbl8wbGjaUAn2M8BETrnvxWS10Mcb8j9zHmqwUC6Q/5Vk77ydIy5zmFN9VEA9zit8riENtNuYVs5aO37biH/fWtauLOKMpc9ySme4CeS0nV0krfsph3HAht/Fe9k4b/pUdHGGAGzzjK2aKa5zhMNauTAcXeKkwx2FR59hbRtjGFT6XOKfLhHcvsZsqPcDTCsLfecR+ivgho7TMOEU8rUE8SRGfYJZR+orjFHHDdvENyZP0ibBvoI8AAAAASUVORK5CYII=">
+            <span>Create a username</span>
+        </div>
+        <div class="inputBox">
+            <input type="email"  name="Email address" id="Email address"  required="required">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABaUlEQVR4nO2WS0oDQRCGPzK5ghrB6EX0BhrUhTuzFkwk4mlEUfECCkG9iZgsBA8QHxCCjNFIQzVo01PT8whkkR8KmqH++mpqhu6GuWZQNaADdIEeEANDWT8AbWC1bOA1MAYmKfEFnAP1otA94D0A6IbxNPJCW8B3DqiNHxl/Jm2KcVIwTOO7odA14K0EqI0P+U9SdVEi1MZlyNvGjqlCdlWcGmNgSTN0PN2eAFEGaCQet86RZuomjKoPNIGq4q1KTj+hRlcDvyRA/673nQn4gD74kwZ+9RiSCjeV55GnzkgDjzwGq0gZZc8zCTdnoIF9RV3ZCTxKuMAk8LMGvgsAh8qtc6MlH08R3NKSlz3H33oO6IZT4xNYSTNdTWHLPA3ptiYbe1nQQcjbWm0F3jjSwhyt26FQq3bBM9k0fkBONXJefcwOuENB1YEzucilAWM5zxeLQt0GDoF72fCHAjLrW/k0C/8cc82CfgFtR1RVWaN82QAAAABJRU5ErkJggg==">
+            <span>Enter Valid Email address</span>
+    </div> 
+    <div class="inputBox">
+        <input type="password"  name="pass1" id="pass1" >
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAxUlEQVR4nO2WPQrCQBCFv17FQvA6amdI60kEsRVyIMULeAP1DImFNimineBKYAQbdxOcRYt58Kp9Ox877B+Y/BoCGXAAbsAF2AFzoE8kzYAKcB98BqYxoA8BrIER0BGPgY2M3YFUs72VFF54ckvJlMBAA5y9rTSkrWRXGuCjFKvbG9JEsnsN8FWKdRtke5Kt53wtJ46V/z04BU6e89rWBZA0AReK0JfzNq3SdlAGdtZqbHNhxwm7QNxfPxKJMjyP8e010VRPzCeH3BXJpVoAAAAASUVORK5CYII=">
+        <span>Create password</span>
+</div>
+<div class="inputBox">
+    <input type="password"  name="pass2" id="pass2" required="required">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAxUlEQVR4nO2WPQrCQBCFv17FQvA6amdI60kEsRVyIMULeAP1DImFNimineBKYAQbdxOcRYt58Kp9Ox877B+Y/BoCGXAAbsAF2AFzoE8kzYAKcB98BqYxoA8BrIER0BGPgY2M3YFUs72VFF54ckvJlMBAA5y9rTSkrWRXGuCjFKvbG9JEsnsN8FWKdRtke5Kt53wtJ46V/z04BU6e89rWBZA0AReK0JfzNq3SdlAGdtZqbHNhxwm7QNxfPxKJMjyP8e010VRPzCeH3BXJpVoAAAAASUVORK5CYII=">
+    <span>Confirm password</span>
+</div>
+<div class="inputBox">
+    <input type="submit" value="Create Account">
+</div>
+<p>Already a memeber ? <a href = {% url 'login'%} "Login.html" class="Login">Login</a></p>
+ 
+
+    <div class="form Login"></div>
+    
+    
+</div>
+</body>
+</html>
